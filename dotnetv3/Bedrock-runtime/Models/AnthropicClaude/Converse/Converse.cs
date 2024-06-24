@@ -58,6 +58,3 @@ catch (AmazonBedrockRuntimeException e)
 
 // Create a partial class to make the top-level script testable.
 namespace AnthropicClaude { public partial class Converse { } }
-
-// Create a partial class to make the top-level script testable.
-namespace AnthropicClaude { public partial class Converse { } }

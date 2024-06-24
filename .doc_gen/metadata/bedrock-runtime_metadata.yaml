@@ -495,6 +495,24 @@ bedrock-runtime_ConverseStream_Mistral:
   services:
     bedrock-runtime: {ConverseStream}
 
+# Converse Multimodal
+bedrock-runtime_Converse_Multimodal_AnthropicClaude:
+  title: Invoke Anthropic Claude with a multimodal message using &BR;'s Converse API
+  title_abbrev: "Multimodal messages with the Converse API"
+  synopsis: send a multimodal message (text and image) to Anthropic Claude, using Bedrock's Converse API.
+  category: Anthropic Claude
+  languages:
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          excerpts:
+            - description: Send a multimodal message (text and image) to Anthropic Claude, using Bedrock's Converse API.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.Converse_Multimodal_AnthropicClaude
+  services:
+    bedrock-runtime: {Converse}
+
 # Invoke Model
 bedrock-runtime_InvokeModel_Ai21LabsJurassic2:
   title: Invoke AI21 Labs Jurassic-2 models on &BR; using the Invoke Model API

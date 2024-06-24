@@ -1,9 +1,11 @@
 ﻿// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved. 
 // SPDX-License-Identifier: Apache-2.0
 
+using Xunit;
+
 namespace BedrockRuntimeTests
 {
-    public class ActionTest_InvokeModelWithResponseStream
+    public class ActionTests_InvokeModelWithResponseStream
     {
         [Theory, Trait("Category", "Integration")]
         [InlineData(typeof(Mistral.InvokeModelWithResponseStream))]
