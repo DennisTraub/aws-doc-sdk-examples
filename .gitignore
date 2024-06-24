@@ -10,6 +10,7 @@
 .recommenders
 .swiftpm
 .venv
+.vs
 .vscode
 Package.resolved
 build_dir

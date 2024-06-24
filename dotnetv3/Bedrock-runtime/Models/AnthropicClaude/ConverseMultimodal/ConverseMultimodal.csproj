@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>AnthropicClaude.$(MSBuildProjectName)</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+      <None Remove="Resources\image.png" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Resources\image.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AWSSDK.BedrockRuntime" Version="3.7.305" />
+      <PackageReference Include="AWSSDK.Core" Version="3.7.304.19" />
+    </ItemGroup>
+</Project>
