@@ -1,15 +1,15 @@
 {
-    "require": {
-        "aws/aws-sdk-php": "^3.286",
-        "guzzlehttp/guzzle": "^7.8"
+  "require": {
+    "aws/aws-sdk-php": "^3.315",
+    "guzzlehttp/guzzle": "^7.8.1"
+  },
+  "autoload": {
+    "psr-0": {
+      "": "*"
     },
-    "autoload": {
-        "psr-0": {
-            "": "*"
-        },
-        "psr-4": {
-            "BedrockRuntime\\": "../bedrock-runtime/",
-            "AwsUtilities\\": "../aws_utilities/"
-        }
+    "psr-4": {
+      "BedrockRuntime\\": "../bedrock-runtime/",
+      "AwsUtilities\\": "../aws_utilities/"
     }
+  }
 }
