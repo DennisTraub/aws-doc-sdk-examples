@@ -495,24 +495,6 @@ bedrock-runtime_ConverseStream_Mistral:
   services:
     bedrock-runtime: {ConverseStream}
 
-# Converse Multimodal
-bedrock-runtime_Converse_Multimodal_AnthropicClaude:
-  title: Invoke Anthropic Claude with a multimodal message using &BR;'s Converse API
-  title_abbrev: "Multimodal messages with the Converse API"
-  synopsis: send a multimodal message (text and image) to Anthropic Claude, using Bedrock's Converse API.
-  category: Anthropic Claude
-  languages:
-    .NET:
-      versions:
-        - sdk_version: 3
-          github: dotnetv3/Bedrock-runtime
-          excerpts:
-            - description: Send a multimodal message (text and image) to Anthropic Claude, using Bedrock's Converse API.
-              snippet_tags:
-                - BedrockRuntime.dotnetv3.Converse_Multimodal_AnthropicClaude
-  services:
-    bedrock-runtime: {Converse}
-
 # Invoke Model
 bedrock-runtime_InvokeModel_Ai21LabsJurassic2:
   title: Invoke AI21 Labs Jurassic-2 models on &BR; using the Invoke Model API
@@ -1316,6 +1298,121 @@ bedrock-runtime_Scenario_ToolUseDemo_CohereCommand:
                 - python/example_code/bedrock-runtime/cross-model-scenarios/tool_use_demo/weather_tool.py
   services:
     bedrock-runtime: {Converse}
+
+## Document upload
+bedrock-runtime_ConverseStream_DocumentUpload_Ai21LabsJurassic2:
+  title: Use the &BR; Converse API to upload a document to AI21 Labs Jurassic-2
+  title_abbrev: "Multimodal messages with the Converse API"
+  synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
+  category: AI21 Labs Jurassic-2
+  languages:
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to AI21 Labs Jurassic-2 for summarization and analysis.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
+                - BedrockRuntime.dotnetv3.ModelId.Jurassic2_Mid
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+  services:
+    bedrock-runtime: {ConverseStream}
+
+bedrock-runtime_ConverseStream_DocumentUpload_AmazonTitanText:
+  title: Use the &BR; Converse API to upload a document to Amazon Titan Text
+  title_abbrev: "Multimodal messages with the Converse API"
+  synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
+  category: Amazon Titan Text
+  languages:
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to Amazon Titan Text for summarization and analysis.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
+                - BedrockRuntime.dotnetv3.ModelId.TitanText_Express
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+  services:
+    bedrock-runtime: {ConverseStream}
+
+bedrock-runtime_ConverseStream_DocumentUpload_AnthropicClaude:
+  title: Use the &BR; Converse API to upload a document to Anthropic Claude
+  title_abbrev: "Multimodal messages with the Converse API"
+  synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
+  category: Anthropic Claude
+  languages:
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to Anthropic Claude for summarization and analysis.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
+                - BedrockRuntime.dotnetv3.ModelId.Claude3_Haiku
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+  services:
+    bedrock-runtime: {ConverseStream}
+
+bedrock-runtime_ConverseStream_DocumentUpload_CohereCommand:
+  title: Use the &BR; Converse API to upload a document to Cohere Command
+  title_abbrev: "Multimodal messages with the Converse API"
+  synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
+  category: Cohere Command
+  languages:
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to Cohere Command for summarization and analysis.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
+                - BedrockRuntime.dotnetv3.ModelId.CohereCommand_R
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+  services:
+    bedrock-runtime: {ConverseStream}
+
+bedrock-runtime_ConverseStream_DocumentUpload_MetaLlama:
+  title: Use the &BR; Converse API to upload a document to Meta Llama
+  title_abbrev: "Multimodal messages with the Converse API"
+  synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
+  category: Meta Llama
+  languages:
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to Meta Llama for summarization and analysis.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
+                - BedrockRuntime.dotnetv3.ModelId.Llama3_8B
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+  services:
+    bedrock-runtime: {ConverseStream}
+
+bedrock-runtime_ConverseStream_DocumentUpload_MistralAi:
+  title: Use the &BR; Converse API to upload a document to Mistral
+  title_abbrev: "Multimodal messages with the Converse API"
+  synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
+  category: Mistral AI
+  languages:
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to Mistral for summarization and analysis.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
+                - BedrockRuntime.dotnetv3.ModelId.Mistral_Large
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+  services:
+    bedrock-runtime: {ConverseStream}
 
 # Other scenarios
 bedrock-runtime_Scenario_InvokeModels:

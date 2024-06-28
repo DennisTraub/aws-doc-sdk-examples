@@ -15,8 +15,6 @@ internal class Program
         {
             new("Send an image using Converse", MultimodalWithImage.Converse),
             new("Send an image using ConverseStream", MultimodalWithImage.ConverseStream),
-            new("Send a document using Converse", MultimodalWithDocument.Converse),
-            new("Send a document using ConverseStream", MultimodalWithDocument.ConverseStream),
             new("Use native request and response fields (Converse)", AdditionalRequestAndResponseFields.Converse),
             new("Use native request and response fields (ConverseStream)", AdditionalRequestAndResponseFields.ConverseStream)
         };

@@ -1,0 +1,30 @@
+// snippet-start:[BedrockRuntime.dotnetv3.ModelId.Jurassic2_Mid]
+// For a complete list of models supporting document upload, visit: https://go.aws/4buaEqu
+const string modelId = "ai21.j2-mid-v1";
+// snippet-end:[BedrockRuntime.dotnetv3.ModelId.Jurassic2_Mid]
+
+// snippet-start:[BedrockRuntime.dotnetv3.ModelId.TitanText_Express]
+// For a complete list of models supporting document upload, visit: https://go.aws/4buaEqu
+const string modelId = "amazon.titan-text-express-v1";
+// snippet-end:[BedrockRuntime.dotnetv3.ModelId.TitanText_Express]
+
+// snippet-start:[BedrockRuntime.dotnetv3.ModelId.Claude3_Haiku]
+// For a complete list of models supporting document upload, visit: https://go.aws/4buaEqu
+const string modelId = "anthropic.claude-3-haiku-20240307-v1:0";
+// snippet-end:[BedrockRuntime.dotnetv3.ModelId.Claude3_Haiku]
+
+// snippet-start:[BedrockRuntime.dotnetv3.ModelId.CohereCommand_R]
+// For a complete list of models supporting document upload, visit: https://go.aws/4buaEqu
+const string modelId = "cohere.command-r-v1:0";
+// snippet-end:[BedrockRuntime.dotnetv3.ModelId.CohereCommand_R]
+
+// snippet-start:[BedrockRuntime.dotnetv3.ModelId.Llama3_8B]
+// For a complete list of models supporting document upload, visit: https://go.aws/4buaEqu
+const string modelId = "meta.llama3-8b-instruct-v1:0";
+// snippet-end:[BedrockRuntime.dotnetv3.ModelId.Claude3Haiku]
+
+// snippet-start:[BedrockRuntime.dotnetv3.ModelId.Mistral_Large]
+// For a complete list of models supporting document upload, visit: https://go.aws/4buaEqu
+const string modelId = "mistral.mistral-large-2402-v1:0";
+// snippet-end:[BedrockRuntime.dotnetv3.ModelId.Mistral_Large]
+
