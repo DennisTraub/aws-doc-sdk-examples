@@ -1,4 +1,5 @@
 <?php
+
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 
@@ -7,9 +8,10 @@
 namespace BedrockRuntime;
 
 use Aws\BedrockRuntime\BedrockRuntimeClient;
+use AwsUtilities\AWSServiceClass;
 use Exception;
 
-class BedrockRuntimeService extends \AwsUtilities\AWSServiceClass
+class BedrockRuntimeService extends AWSServiceClass
 {
     protected BedrockRuntimeClient $bedrockRuntimeClient;
 
@@ -18,7 +20,8 @@ class BedrockRuntimeService extends \AwsUtilities\AWSServiceClass
         $region = 'us-east-1',
         $version = 'latest',
         $profile = 'default'
-    ) {
+    )
+    {
         if (gettype($client) == BedrockRuntimeClient::class) {
             $this->bedrockRuntimeClient = $client;
             return;

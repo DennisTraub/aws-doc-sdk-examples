@@ -32,6 +32,7 @@ For prerequisites, see the [README](../README.md#Prerequisites) in the `dotnetv3
 
 - [Converse](Models/Ai21LabsJurassic2/Converse/Converse.cs#L4)
 - [InvokeModel](Models/Ai21LabsJurassic2/InvokeModel/InvokeModel.cs#L4)
+- [Scenario: Document upload](CrossModelScenarios/DocumentUpload/DocumentUpload.cs#L20)
 
 ### Amazon Titan Text
 
@@ -39,6 +40,7 @@ For prerequisites, see the [README](../README.md#Prerequisites) in the `dotnetv3
 - [ConverseStream](Models/AmazonTitanText/ConverseStream/ConverseStream.cs#L4)
 - [InvokeModel](Models/AmazonTitanText/InvokeModel/InvokeModel.cs#L4)
 - [InvokeModelWithResponseStream](Models/AmazonTitanText/InvokeModelWithResponseStream/InvokeModelWithResponseStream.cs#L4)
+- [Scenario: Document upload](CrossModelScenarios/DocumentUpload/DocumentUpload.cs#L20)
 
 ### Anthropic Claude
 
@@ -46,7 +48,7 @@ For prerequisites, see the [README](../README.md#Prerequisites) in the `dotnetv3
 - [ConverseStream](Models/AnthropicClaude/ConverseStream/ConverseStream.cs#L4)
 - [InvokeModel](Models/AnthropicClaude/InvokeModel/InvokeModel.cs#L4)
 - [InvokeModelWithResponseStream](Models/AnthropicClaude/InvokeModelWithResponseStream/InvokeModelWithResponseStream.cs#L4)
-- [Multimodal messages with the Converse API](Models/AnthropicClaude/ConverseMultimodal/ConverseMultimodal.cs#L4)
+- [Scenario: Document upload](CrossModelScenarios/DocumentUpload/DocumentUpload.cs#L20)
 
 ### Cohere Command
 
@@ -56,6 +58,7 @@ For prerequisites, see the [README](../README.md#Prerequisites) in the `dotnetv3
 - [InvokeModel: Command and Command Light](Models/CohereCommand/Command_InvokeModel/InvokeModel.cs#L4)
 - [InvokeModelWithResponseStream: Command R and R+](Models/CohereCommand/Command_R_InvokeModelWithResponseStream/InvokeModelWithResponseStream.cs#L4)
 - [InvokeModelWithResponseStream: Command and Command Light](Models/CohereCommand/Command_InvokeModelWithResponseStream/InvokeModelWithResponseStream.cs#L4)
+- [Scenario: Document upload](CrossModelScenarios/DocumentUpload/DocumentUpload.cs#L20)
 
 ### Meta Llama
 
@@ -65,6 +68,7 @@ For prerequisites, see the [README](../README.md#Prerequisites) in the `dotnetv3
 - [InvokeModel: Llama 3](Models/MetaLlama/Llama3_InvokeModel/InvokeModel.cs#L4)
 - [InvokeModelWithResponseStream: Llama 2](Models/MetaLlama/Llama2_InvokeModelWithResponseStream/InvokeModelWithResponseStream.cs#L4)
 - [InvokeModelWithResponseStream: Llama 3](Models/MetaLlama/Llama3_InvokeModelWithResponseStream/InvokeModelWithResponseStream.cs#L4)
+- [Scenario: Document upload](CrossModelScenarios/DocumentUpload/DocumentUpload.cs#L20)
 
 ### Mistral AI
 
@@ -72,6 +76,7 @@ For prerequisites, see the [README](../README.md#Prerequisites) in the `dotnetv3
 - [ConverseStream](Models/Mistral/ConverseStream/ConverseStream.cs#L4)
 - [InvokeModel](Models/Mistral/InvokeModel/InvokeModel.cs#L4)
 - [InvokeModelWithResponseStream](Models/Mistral/InvokeModelWithResponseStream/InvokeModelWithResponseStream.cs#L4)
+- [Scenario: Document upload](CrossModelScenarios/DocumentUpload/DocumentUpload.cs#L20)
 
 
 <!--custom.examples.start-->

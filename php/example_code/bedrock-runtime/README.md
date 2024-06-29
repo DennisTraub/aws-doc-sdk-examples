@@ -45,18 +45,33 @@ functions within the same service.
 ### AI21 Labs Jurassic-2
 
 - [InvokeModel](BedrockRuntimeService.php#L72)
+- [Scenario: Document upload](cross_model_scenarios/document_upload.php#L7)
 
 ### Amazon Titan Image Generator
 
 - [InvokeModel](BedrockRuntimeService.php#L184)
 
+### Amazon Titan Text
+
+- [Scenario: Document upload](cross_model_scenarios/document_upload.php#L7)
+
 ### Anthropic Claude
 
 - [InvokeModel](BedrockRuntimeService.php#L33)
+- [Scenario: Document upload](cross_model_scenarios/document_upload.php#L7)
+
+### Cohere Command
+
+- [Scenario: Document upload](cross_model_scenarios/document_upload.php#L7)
 
 ### Meta Llama
 
 - [InvokeModel: Llama 2](BedrockRuntimeService.php#L107)
+- [Scenario: Document upload](cross_model_scenarios/document_upload.php#L7)
+
+### Mistral AI
+
+- [Scenario: Document upload](cross_model_scenarios/document_upload.php#L7)
 
 ### Stable Diffusion
 

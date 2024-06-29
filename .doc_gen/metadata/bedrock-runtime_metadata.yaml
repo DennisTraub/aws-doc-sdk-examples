@@ -1302,7 +1302,7 @@ bedrock-runtime_Scenario_ToolUseDemo_CohereCommand:
 ## Document upload
 bedrock-runtime_ConverseStream_DocumentUpload_Ai21LabsJurassic2:
   title: Use the &BR; Converse API to upload a document to AI21 Labs Jurassic-2
-  title_abbrev: "Multimodal messages with the Converse API"
+  title_abbrev: "Scenario: Document upload"
   synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
   category: AI21 Labs Jurassic-2
   languages:
@@ -1315,13 +1315,23 @@ bedrock-runtime_ConverseStream_DocumentUpload_Ai21LabsJurassic2:
               snippet_tags:
                 - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
                 - BedrockRuntime.dotnetv3.ModelId.Jurassic2_Mid
-                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.main
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime/
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to AI21 Labs Jurassic-2 for summarization and analysis.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.header
+                - php.example_code.bedrock-runtime.ModelId.Jurassic2_Mid
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.main
   services:
     bedrock-runtime: {ConverseStream}
 
 bedrock-runtime_ConverseStream_DocumentUpload_AmazonTitanText:
   title: Use the &BR; Converse API to upload a document to Amazon Titan Text
-  title_abbrev: "Multimodal messages with the Converse API"
+  title_abbrev: "Scenario: Document upload"
   synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
   category: Amazon Titan Text
   languages:
@@ -1334,13 +1344,23 @@ bedrock-runtime_ConverseStream_DocumentUpload_AmazonTitanText:
               snippet_tags:
                 - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
                 - BedrockRuntime.dotnetv3.ModelId.TitanText_Express
-                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.main
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime/
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to AI21 Labs Jurassic-2 for summarization and analysis.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.header
+                - php.example_code.bedrock-runtime.ModelId.TitanText_Express
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.main
   services:
     bedrock-runtime: {ConverseStream}
 
 bedrock-runtime_ConverseStream_DocumentUpload_AnthropicClaude:
   title: Use the &BR; Converse API to upload a document to Anthropic Claude
-  title_abbrev: "Multimodal messages with the Converse API"
+  title_abbrev: "Scenario: Document upload"
   synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
   category: Anthropic Claude
   languages:
@@ -1353,13 +1373,23 @@ bedrock-runtime_ConverseStream_DocumentUpload_AnthropicClaude:
               snippet_tags:
                 - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
                 - BedrockRuntime.dotnetv3.ModelId.Claude3_Haiku
-                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.main
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime/
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to AI21 Labs Jurassic-2 for summarization and analysis.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.header
+                - php.example_code.bedrock-runtime.ModelId.Claude3_Haiku
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.main
   services:
     bedrock-runtime: {ConverseStream}
 
 bedrock-runtime_ConverseStream_DocumentUpload_CohereCommand:
   title: Use the &BR; Converse API to upload a document to Cohere Command
-  title_abbrev: "Multimodal messages with the Converse API"
+  title_abbrev: "Scenario: Document upload"
   synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
   category: Cohere Command
   languages:
@@ -1372,13 +1402,23 @@ bedrock-runtime_ConverseStream_DocumentUpload_CohereCommand:
               snippet_tags:
                 - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
                 - BedrockRuntime.dotnetv3.ModelId.CohereCommand_R
-                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.main
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime/
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to AI21 Labs Jurassic-2 for summarization and analysis.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.header
+                - php.example_code.bedrock-runtime.ModelId.CohereCommand_R
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.main
   services:
     bedrock-runtime: {ConverseStream}
 
 bedrock-runtime_ConverseStream_DocumentUpload_MetaLlama:
   title: Use the &BR; Converse API to upload a document to Meta Llama
-  title_abbrev: "Multimodal messages with the Converse API"
+  title_abbrev: "Scenario: Document upload"
   synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
   category: Meta Llama
   languages:
@@ -1391,13 +1431,23 @@ bedrock-runtime_ConverseStream_DocumentUpload_MetaLlama:
               snippet_tags:
                 - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
                 - BedrockRuntime.dotnetv3.ModelId.Llama3_8B
-                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.main
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime/
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to AI21 Labs Jurassic-2 for summarization and analysis.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.header
+                - php.example_code.bedrock-runtime.ModelId.Llama3_8B
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.main
   services:
     bedrock-runtime: {ConverseStream}
 
 bedrock-runtime_ConverseStream_DocumentUpload_MistralAi:
   title: Use the &BR; Converse API to upload a document to Mistral
-  title_abbrev: "Multimodal messages with the Converse API"
+  title_abbrev: "Scenario: Document upload"
   synopsis: use the &BR; Converse API to upload a document for summarization and analysis.
   category: Mistral AI
   languages:
@@ -1410,7 +1460,17 @@ bedrock-runtime_ConverseStream_DocumentUpload_MistralAi:
               snippet_tags:
                 - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.header
                 - BedrockRuntime.dotnetv3.ModelId.Mistral_Large
-                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.code
+                - BedrockRuntime.dotnetv3.ConverseStream_DocumentUpload.main
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime/
+          excerpts:
+            - description: Use the &BR; Converse API to upload a document to AI21 Labs Jurassic-2 for summarization and analysis.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.header
+                - php.example_code.bedrock-runtime.ModelId.Mistral_Large
+                - php.example_code.bedrock-runtime.converse_stream.document_upload.main
   services:
     bedrock-runtime: {ConverseStream}
 

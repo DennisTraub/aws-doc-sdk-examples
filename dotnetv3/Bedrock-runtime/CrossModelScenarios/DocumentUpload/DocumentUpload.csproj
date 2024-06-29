@@ -10,11 +10,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Remove="1997 Shareholder Letter.pdf" />
+		<None Remove="document.pdf" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Content Include="../../Resources/1997 Shareholder Letter.pdf">
+		<Content Include="../../Resources/document.pdf">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>

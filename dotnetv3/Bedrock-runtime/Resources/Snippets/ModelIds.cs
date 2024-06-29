@@ -1,3 +1,6 @@
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: Apache-2.0
+
 // snippet-start:[BedrockRuntime.dotnetv3.ModelId.Jurassic2_Mid]
 // For a complete list of models supporting document upload, visit: https://go.aws/4buaEqu
 const string modelId = "ai21.j2-mid-v1";
@@ -21,10 +24,9 @@ const string modelId = "cohere.command-r-v1:0";
 // snippet-start:[BedrockRuntime.dotnetv3.ModelId.Llama3_8B]
 // For a complete list of models supporting document upload, visit: https://go.aws/4buaEqu
 const string modelId = "meta.llama3-8b-instruct-v1:0";
-// snippet-end:[BedrockRuntime.dotnetv3.ModelId.Claude3Haiku]
+// snippet-end:[BedrockRuntime.dotnetv3.ModelId.Llama3_8B]
 
 // snippet-start:[BedrockRuntime.dotnetv3.ModelId.Mistral_Large]
 // For a complete list of models supporting document upload, visit: https://go.aws/4buaEqu
 const string modelId = "mistral.mistral-large-2402-v1:0";
 // snippet-end:[BedrockRuntime.dotnetv3.ModelId.Mistral_Large]
-

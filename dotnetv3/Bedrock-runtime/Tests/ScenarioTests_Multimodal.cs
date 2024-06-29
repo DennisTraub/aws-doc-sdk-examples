@@ -18,7 +18,7 @@ public class ScenarioTests_Multimodal
     // }
     //
     // [Fact]
-    // public async Task ConverseStreamImageScenarioReturnsHttpOk()
+    // public async Task ConverseStreamImageScenarioReturnsOk()
     // {
     //     var response = await MultimodalWithImage.ConverseStream();
     //     response.HttpStatusCode.Should().Be(HttpStatusCode.OK);
