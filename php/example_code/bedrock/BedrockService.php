@@ -6,33 +6,30 @@
 namespace Bedrock;
 
 use Aws\Bedrock\BedrockClient;
+use AwsUtilities\AWSServiceClass;
 
-class BedrockService extends \AwsUtilities\AWSServiceClass
+class BedrockService extends AWSServiceClass
 {
     protected BedrockClient $bedrockClient;
 
-    public function __construct(
-        $client = null,
-        $region = 'us-east-1',
-        $version = 'latest',
-        $profile = 'default'
-    ) {
-        if (gettype($client) == BedrockClient::class) {
-            $this->bedrockClient = $client;
-            return;
-        }
+    public function getBedrockClient(): BedrockClient
+    {
+        return $this->bedrockClient;
+    }
+
+    public function __construct($region = 'us-west-2', $profile = 'default', $version = 'latest')
+    {
         $this->bedrockClient = new BedrockClient([
             'region' => $region,
-            'version' => $version,
             'profile' => $profile,
+            'version' => $version
         ]);
     }
 
     #snippet-start:[php.example_code.bedrock.service.listFoundationModels]
     public function listFoundationModels()
     {
-        $result = $this->bedrockClient->listFoundationModels();
-        return $result;
+        return $this->bedrockClient->listFoundationModels();
     }
     #snippet-end:[php.example_code.bedrock.service.listFoundationModels]
 }

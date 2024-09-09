@@ -22,13 +22,11 @@ class GettingStartedWithBedrock
         print("Welcome to the Amazon Bedrock getting started demo using PHP!\n");
         echo("--------------------------------------------------------------\n");
 
-        $clientArgs = [
-            'region' => 'us-east-1',
-            'version' => 'latest',
-            'profile' => 'default',
-        ];
+        $region = 'us-east-2';
+        $profile = 'default';
+        $version = 'latest';
 
-        $bedrockService = new BedrockService($clientArgs);
+        $bedrockService = new BedrockService($region, $profile, $version);
 
         echo "Let's retrieve the available foundation models (FMs).\n";
 
