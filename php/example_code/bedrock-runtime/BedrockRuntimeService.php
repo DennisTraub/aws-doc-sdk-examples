@@ -7,26 +7,24 @@
 namespace BedrockRuntime;
 
 use Aws\BedrockRuntime\BedrockRuntimeClient;
+use AwsUtilities\AWSServiceClass;
 use Exception;
 
-class BedrockRuntimeService extends \AwsUtilities\AWSServiceClass
+class BedrockRuntimeService extends AWSServiceClass
 {
     protected BedrockRuntimeClient $bedrockRuntimeClient;
 
-    public function __construct(
-        $client = null,
-        $region = 'us-east-1',
-        $version = 'latest',
-        $profile = 'default'
-    ) {
-        if (gettype($client) == BedrockRuntimeClient::class) {
-            $this->bedrockRuntimeClient = $client;
-            return;
-        }
+    public function getBedrockRuntimeClient(): BedrockRuntimeClient
+    {
+        return $this->bedrockRuntimeClient;
+    }
+
+    public function __construct($region = 'us-west-2', $profile = 'default', $version = 'latest')
+    {
         $this->bedrockRuntimeClient = new BedrockRuntimeClient([
             'region' => $region,
-            'version' => $version,
             'profile' => $profile,
+            'version' => $version,
         ]);
     }
 
@@ -149,7 +147,7 @@ class BedrockRuntimeService extends \AwsUtilities\AWSServiceClass
         $base64_image_data = "";
 
         try {
-            $modelId = 'stability.stable-diffusion-xl';
+            $modelId = 'stability.stable-diffusion-xl-v1';
 
             $body = [
                 'text_prompts' => [

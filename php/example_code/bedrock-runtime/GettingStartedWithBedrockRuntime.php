@@ -22,13 +22,11 @@ class GettingStartedWithBedrockRuntime
         echo "Welcome to the Amazon Bedrock Runtime getting started demo using PHP!\n";
         echo "---------------------------------------------------------------------\n";
 
-        $clientArgs = [
-            'region' => 'us-east-1',
-            'version' => 'latest',
-            'profile' => 'default',
-        ];
+        $region = 'us-east-1';
+        $profile = 'default';
+        $version = 'latest';
 
-        $bedrockRuntimeService = new BedrockRuntimeService($clientArgs);
+        $bedrockRuntimeService = new BedrockRuntimeService($region, $profile, $version);
 
         $prompt = 'In one paragraph, who are you?';
 
