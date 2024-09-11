@@ -1,4 +1,5 @@
 <?php
+
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 
@@ -13,18 +14,16 @@ use Exception;
 class BedrockRuntimeService extends AWSServiceClass
 {
     protected BedrockRuntimeClient $bedrockRuntimeClient;
-
     public function getBedrockRuntimeClient(): BedrockRuntimeClient
     {
         return $this->bedrockRuntimeClient;
     }
 
-    public function __construct($region = 'us-west-2', $profile = 'default', $version = 'latest')
+    public function __construct()
     {
         $this->bedrockRuntimeClient = new BedrockRuntimeClient([
-            'region' => $region,
-            'profile' => $profile,
-            'version' => $version,
+            'region' => 'us-east-1',
+            'profile' => 'default'
         ]);
     }
 
@@ -36,28 +35,22 @@ class BedrockRuntimeService extends AWSServiceClass
         # https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-claude.html
 
         $completion = "";
-
         try {
             $modelId = 'anthropic.claude-v2';
-
             # Claude requires you to enclose the prompt as follows:
             $prompt = "\n\nHuman: {$prompt}\n\nAssistant:";
-
             $body = [
                 'prompt' => $prompt,
                 'max_tokens_to_sample' => 200,
                 'temperature' => 0.5,
                 'stop_sequences' => ["\n\nHuman:"],
             ];
-
             $result = $this->bedrockRuntimeClient->invokeModel([
                 'contentType' => 'application/json',
                 'body' => json_encode($body),
                 'modelId' => $modelId,
             ]);
-
             $response_body = json_decode($result['body']);
-
             $completion = $response_body->completion;
         } catch (Exception $e) {
             echo "Error: ({$e->getCode()}) - {$e->getMessage()}\n";
@@ -75,24 +68,19 @@ class BedrockRuntimeService extends AWSServiceClass
         # https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-jurassic2.html
 
         $completion = "";
-
         try {
             $modelId = 'ai21.j2-mid-v1';
-
             $body = [
                 'prompt' => $prompt,
                 'temperature' => 0.5,
                 'maxTokens' => 200,
             ];
-
             $result = $this->bedrockRuntimeClient->invokeModel([
                 'contentType' => 'application/json',
                 'body' => json_encode($body),
                 'modelId' => $modelId,
             ]);
-
             $response_body = json_decode($result['body']);
-
             $completion = $response_body->completions[0]->data->text;
         } catch (Exception $e) {
             echo "Error: ({$e->getCode()}) - {$e->getMessage()}\n";
@@ -110,24 +98,19 @@ class BedrockRuntimeService extends AWSServiceClass
         # https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-meta.html
 
         $completion = "";
-
         try {
             $modelId = 'meta.llama2-13b-chat-v1';
-
             $body = [
                 'prompt' => $prompt,
                 'temperature' => 0.5,
                 'max_gen_len' => 512,
             ];
-
             $result = $this->bedrockRuntimeClient->invokeModel([
                 'contentType' => 'application/json',
                 'body' => json_encode($body),
                 'modelId' => $modelId,
             ]);
-
             $response_body = json_decode($result['body']);
-
             $completion = $response_body->generation;
         } catch (Exception $e) {
             echo "Error: ({$e->getCode()}) - {$e->getMessage()}\n";
@@ -145,10 +128,8 @@ class BedrockRuntimeService extends AWSServiceClass
         # https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-stability-diffusion.html
 
         $base64_image_data = "";
-
         try {
             $modelId = 'stability.stable-diffusion-xl-v1';
-
             $body = [
                 'text_prompts' => [
                     ['text' => $prompt]
@@ -157,7 +138,6 @@ class BedrockRuntimeService extends AWSServiceClass
                 'cfg_scale' => 10,
                 'steps' => 30
             ];
-
             if ($style_preset) {
                 $body['style_preset'] = $style_preset;
             }
@@ -167,9 +147,7 @@ class BedrockRuntimeService extends AWSServiceClass
                 'body' => json_encode($body),
                 'modelId' => $modelId,
             ]);
-
             $response_body = json_decode($result['body']);
-
             $base64_image_data = $response_body->artifacts[0]->base64;
         } catch (Exception $e) {
             echo "Error: ({$e->getCode()}) - {$e->getMessage()}\n";
@@ -187,10 +165,8 @@ class BedrockRuntimeService extends AWSServiceClass
         # https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-titan-image.html
 
         $base64_image_data = "";
-
         try {
             $modelId = 'amazon.titan-image-generator-v1';
-
             $request = json_encode([
                 'taskType' => 'TEXT_IMAGE',
                 'textToImageParams' => [
@@ -205,15 +181,12 @@ class BedrockRuntimeService extends AWSServiceClass
                     'seed' => $seed
                 ]
             ]);
-
             $result = $this->bedrockRuntimeClient->invokeModel([
                 'contentType' => 'application/json',
                 'body' => $request,
                 'modelId' => $modelId,
             ]);
-
             $response_body = json_decode($result['body']);
-
             $base64_image_data = $response_body->images[0];
         } catch (Exception $e) {
             echo "Error: ({$e->getCode()}) - {$e->getMessage()}\n";
