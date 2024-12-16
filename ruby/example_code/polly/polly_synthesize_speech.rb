@@ -20,7 +20,7 @@ begin
 
   # Open file and get the contents as a string
   if File.exist?(filename)
-    contents = IO.read(filename)
+    contents = File.read(filename)
   else
     puts "No such file: #{filename}"
     exit 1
